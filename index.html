@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>KIOWA</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+
+</head>
+
+<body>
+
+
+    <nav id="navigate">
+
+        <div class="wrapper">
+            <a class="logo" href="#home" style="text-decoration: none; color: rgb(0, 0, 0);">
+                <p style="font-size: 3.3rem; font-weight: bold; font-family: 'Times New Roman'; color: rgb(0, 196, 130);">CIEFP-Kiowa</p>
+            </a>
+
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Início</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Cursos</a></li>
+                    <li><a onclick="closeMenu()" href="#about" href="#">Sobre</a></li>
+                </ul>
+                <a class="button" onclick="closeMenu()" href="#contact"> Entre em contacto</a>
+
+                <ul class="social-links">
+                    <li>
+                        <a target="_blank" href="#">
+                            <svg width="30" height="30" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.2824 25H15.8426C15.6011 25.0001 15.3678 25.0844 15.1852 25.2375L9.28125 30V25H6.1875C5.914 25 5.65169 24.8946 5.4583 24.7071C5.2649 24.5196 5.15625 24.2652 5.15625 24V6C5.15625 5.73478 5.2649 5.48043 5.4583 5.29289C5.65169 5.10536 5.914 5 6.1875 5H26.8125C27.086 5 27.3483 5.10536 27.5417 5.29289C27.7351 5.48043 27.8438 5.73478 27.8438 6V19.5375C27.8417 19.6832 27.8072 19.8267 27.7427 19.9583C27.6782 20.0899 27.5851 20.2065 27.4699 20.3L21.9398 24.7625C21.7572 24.9156 21.5239 24.9999 21.2824 25V25Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21.6562 11V17" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M15.4688 11V17" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#">
+                            <svg width="30" height="30" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 11C16 8.25003 18.3125 5.96253 21.0625 6.00003C22.0256 6.01115 22.9649 6.30018 23.7676 6.83237C24.5704 7.36457 25.2023 8.11728 25.5875 9.00003H30L25.9625 13.0375C25.7019 17.0932 23.9066 20.8975 20.9415 23.6769C17.9764 26.4562 14.0641 28.002 10 28C6 28 5 26.5 5 26.5C5 26.5 9 25 11 22C11 22 3 18 5 7.00003C5 7.00003 10 12 16 13V11Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#">
+                            <svg width="30" height="30" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+                                <path
+                                    d="M21.5 4.5H10.5C7.18629 4.5 4.5 7.18629 4.5 10.5V21.5C4.5 24.8137 7.18629 27.5 10.5 27.5H21.5C24.8137 27.5 27.5 24.8137 27.5 21.5V10.5C27.5 7.18629 24.8137 4.5 21.5 4.5Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M22.5 11C23.3284 11 24 10.3284 24 9.5C24 8.67157 23.3284 8 22.5 8C21.6716 8 21 8.67157 21 9.5C21 10.3284 21.6716 11 22.5 11Z"
+                                    fill="#ffffff" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <button aria-expanded="false" aria-label="Abrir Menu" onclick="openMenu()" class="open-menu">
+                <img style="width: 3.1rem;" src="assets/menubar.png" alt="">
+            </button>
+
+            <button aria-expanded="true" aria-label="Fechar Menu" onclick="closeMenu()" class="close-menu">
+                <img style="width: 2.8rem;" src="assets/exit.png" alt="">
+            </button>
+
+        </div>
+
+    </nav>
+
+    <section id="home">
+
+        <div class="wrapper">
+
+            <div class="col-a">
+                <header>
+                    <h4>BOAS-VINDAS AO CIEFP-KIOWA </h4>
+                    <h1>Ensino de Qualidade</h1>
+                </header>
+                <div class="content">
+                    <p>
+                        O «CIEFP-KIOWA» Centro Integrado de Emprego e Formação Profissional do kiowa, é um serviço
+                        executivo indirecto do Instituto Nacional de Emprego e Formação
+                        Profissional, vocacionado à realização de acções de formação profissional, dotado de autonomia
+                        administrativa e patrimonial. CIEFP-KIOWA foi
+                        inaugurado aos 23 de julho de 2022 por sua excelência Teresa Rodrigues Dias, Ministra da
+                        Administração Pública, Trabalho e Segurança Social de Angola.
+                    </p>
+                    <a class="button" href="https://wa.me/+244940996178" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16" id="IconChangeColor">
+                            <path
+                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                                id="mainIconPathAttribute" stroke-width="0" stroke="#ff0000" fill="#ffffff"></path>
+                        </svg>
+                        Entre em contacto
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-b">
+                <img src="./assets/Moça .png" alt="Uma mulher sorrindo" />
+            </div>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <h3>+2.000</h3>
+                    <p>Alunos Ativos</p>
+                </div>
+                <div class="stat">
+                    <h3>+20</h3>
+                    <p>Funcionários Disponíveis</p>
+                </div>
+                <div class="stat">
+                    <h3>+01</h3>
+                    <p>Anos no Mercado</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="wrapper">
+            <header>
+                <h4>Cursos</h4>
+                <h2>Ofertas de Cursos do <br>
+                    CIEFP-KIOWA
+                </h2>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>CORTE E COSTURA</h3>
+                        <div class="content">
+
+                            <img src="assets/1.jpg" alt="" style="border-radius: 15px;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>COZINHA E PASTELARIA</h3>
+                        <div class="content">
+
+                            <img src="assets/2.jpg" alt="" style="border-radius: 15px;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>INFORMÁTICA</h3>
+                        <div class="content">
+
+                            <img src="assets/3.jpg" alt="" style="border-radius: 15px;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>CANALIZAÇÃO</h3>
+                        <div class="content">
+
+                            <img src="assets/4.jpg" alt="" style="border-radius: 15px;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>ALVENARIA</h3>
+                        <div class="content">
+
+                            <img src="assets/5.jpg" alt="" style="border-radius: 15px;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>ARTE E DECORAÇÃO</h3>
+                        <div class="content">
+
+                            <img src="assets/dec1.jpg" alt="" style="border-radius: 15px;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>SERRALHARIA</h3>
+                        <div class="content">
+
+                            <img src="assets/7.jpg" alt="" style="border-radius: 15px;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>ELECTRICIDADE</h3>
+                        <div class="content">
+
+                            <img src="assets/8.jpg" alt="" style="border-radius: 15px;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>MARCENARIA</h3>
+                        <div class="content">
+
+                            <img src="assets/10.jpg" alt="" style="border-radius: 15px;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="card" style="display: block;">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>MECÂNICA AUTO</h3>
+                        <div class="content">
+
+                            <img src="assets/9.jpg" alt="" style="border-radius: 15px; width: 32rem;">
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </header>
+
+            <div class="content">
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h4>SOBRE NÓS</h4>
+                    <h2>Entenda quem somos e por que existimos</h2>
+                </header>
+                <div class="content">
+                    <p>
+                        Centro de formação técnico-profissional foi projectado para 1000 formandos, em dois turnos, isto
+                        é, matinal e vespertino. O CIEFP-KIOWA tem as seguintes atribuições: <br>
+                        • Realizar acções de
+                        formação profissional, de acordo com as exigências do Sistema Nacional de Formação Profissional
+                        (SNFP); <br>
+                        • Promover a valorização do formando, dotando-o de conhecimentos técnicos e de valores
+                        deontológicos, de modo a permitir a sua inserção rápida no mercado de emprego; <br>
+                        • Colaborar na
+                        identificação de necessidades locais de acções de formação e reabilitação profissional.<br>
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-b">
+                <img style="border-radius: 1.5rem;" src="./assets/cent.jpg" alt="Um Doctor feliz">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="wrapper">
+            <header>
+                <h4>Saiba mais sobre nós</h4>
+                <h2>Informações extras sobre<br>
+                    "CIEFP-KIOWA"
+                </h2>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>MISSÃO</h3>
+                        <div class="content">
+                            <p>
+                                Assegurar a execução das políticas sobre a organização do mercado de emprego e da
+                                formação profissional
+                                a nível de Mbanza Kongo e aplicação dos programas nos domínios da formação e
+                                reabilitação profissional definidas e
+                                aprovadas pelo executivo.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>VISÃO</h3>
+                        <div class="content">
+                            <p>
+                                Ser referência na promoção da empregabilidade e formação profissional em Mbanza Kongo,
+                                com elevado
+                                padrão ético e de qualidade, em absoluto comprometimento em alinhamento com as
+                                estratégias
+                                vigentes de desenvolvimento socioeconómico do país.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>OBJECTIVOS</h3>
+                        <div class="content">
+                            <p>
+                                Promover a inclusão social e a igualidade de oportunidades no mercado de trabalho,
+                                através da formação
+                                e capacitação de grupos vulneráveis, como mulheres jhovens, pessoas com dificiências e
+                                desempregados
+                                de longa duração.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>CARGA HORÁRIA</h3>
+                        <div class="content">
+                            <p>
+                                CURSO DE CURTA DURAÇÃO: <br>
+                                130 horas à 260 horas "3 Meses".<br>
+                                CURSO DE LONGA DURAÇÃO: <br>
+                                400 horas "5 Meses".
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>HORÁRIO</h3>
+                        <div class="content">
+                            <p>
+                                MATINAL: 08H à 12H. <br>
+                                VESPERTINO: 13H à 17H.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok2.png" alt="">
+                        <h3>LOCAL</h3>
+                        <div class="content">
+                            <p>
+                                Centro de Integrado de Emprego e Formação Profissional do Kiowa, INEFOP,
+                                <span style="color: blue;">"MAPTSS".</span> 
+                                
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </header>
+
+            <div class="content">
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+
+        <div class="wrapper">
+
+            <div class="col-a">
+                <img style="width: 15rem;" src="assets/log.png" alt="Nosso Logo">
+
+            </div>
+
+            <div class="content">
+                <ul>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="#ffffff">
+                            <path
+                                d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" />
+                        </svg>
+                        CIEFPKIOWA@GMAIL.COM
+                    </li>
+<br>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
+                            <path
+                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z" />
+                        </svg>
+                        +244 936 715 539 / +244 940 996 178
+                    </li>
+<br>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
+                            <path
+                                d="M12 0c-3.148 0-6 2.553-6 5.702 0 3.148 2.602 6.907 6 12.298 3.398-5.391 6-9.15 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm8 12c0 2.209-3.581 4-8 4s-8-1.791-8-4c0-1.602 1.888-2.98 4.608-3.619l1.154 1.824c-.401.068-.806.135-1.178.242-3.312.949-3.453 2.109-.021 3.102 2.088.603 4.777.605 6.874-.001 3.619-1.047 3.164-2.275-.268-3.167-.296-.077-.621-.118-.936-.171l1.156-1.828c2.723.638 4.611 2.016 4.611 3.618z" />
+                        </svg>
+                        Kiowa, Estrada Nacional 210, Bairro 4 de Fevereiro, Mbanza Kongo, Zaire, Angola.
+                    </li>
+
+                </ul>
+ <br>
+ <br>
+                <p>
+                   &copy; Copy Right. Todos Direitos Reservados. 
+                </p>
+
+            </div>
+
+            <div class="col-b">
+
+                <ul class="social-links">
+                    <li>
+                        <a href="https://wa.me/+244940996178" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-whatsapp" viewBox="0 0 16 16" id="IconChangeColor">
+                                <path
+                                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                                    id="mainIconPathAttribute" stroke-width="0" stroke="#ff0000" fill="#ffffff"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/+244940996178" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16" id="IconChangeColor">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                                    id="mainIconPathAttribute" fill="#ffffff" stroke-width="0" stroke="#ff0000"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/+244940996178" target="_blank">
+                            <svg width="35" height="35" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+                                <path
+                                    d="M21.5 4.5H10.5C7.18629 4.5 4.5 7.18629 4.5 10.5V21.5C4.5 24.8137 7.18629 27.5 10.5 27.5H21.5C24.8137 27.5 27.5 24.8137 27.5 21.5V10.5C27.5 7.18629 24.8137 4.5 21.5 4.5Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M22.5 11C23.3284 11 24 10.3284 24 9.5C24 8.67157 23.3284 8 22.5 8C21.6716 8 21 8.67157 21 9.5C21 10.3284 21.6716 11 22.5 11Z"
+                                    fill="#ffffff" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+    <a id="back" href="#home"><img style="width: 4rem;" src="assets/de-volta-ao-topo.png" alt=""></a>
+
+    <script src="./scrollreveal.js"></script>
+    <script src="./main.js"> </script>
+
+</body>
+
+</html>
